@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Tracker</h1>
+        <div class="header">
+            <div class="budget">
+                <h2>Your Budget: <span id="totalBudget">0 KZT</span></h2>
+            </div>
+            <button class="refreshPage" onclick="refreshPage()">Refresh</button>
+        </div>
+        <div class="expenses">
+            <h2>Expenses:</h2>
+            <input type="text" id="expenseInput" placeholder="Enter Expense">
+            <input type="number" id="amountInput" placeholder="Enter Amount">
+            <button onclick="addExpense()">Add Expense</button>
+            <ul id="expenseList">
+                
+            </ul>
+        </div>
+        <div class="revenue">
+            <h2>Your Revenues:</h2>
+            <input type="text" id="revenueInput" placeholder="Enter Revenue">
+            <input type="number" id="revenueAmountInput" placeholder="Enter Amount">
+            <button onclick="addRevenue()">Add Revenue</button>
+            <ul id="revenueList">
+                
+            </ul>
+        </div>
+    </div>
+
+    <script src="Script/script.js"></script>
+</body>
+</html>
